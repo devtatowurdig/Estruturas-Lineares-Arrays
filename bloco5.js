@@ -40,3 +40,39 @@ function uniqueVetor(vetor) {
     }
 }
 
+
+vetorA = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+vetorB = [4, 5, 6, 7, 8, 10, 11, 12, 13, 14];
+
+function mergeDeOrdenados(vetorA, vetorB){
+
+    let i = 0
+    let j = 0
+    let vetorC = []
+
+    while(i < vetorA.length && j < vetorB.length){
+        if(vetorA[i] < vetorB[j]) {
+            vetorC.push(vetorA[i])
+            i++
+        } else {
+            vetorC.push(vetorB[j])
+            j++
+        }
+    }
+
+    while(i < vetorA.length){
+        vetorC.push[i]
+        i++
+    }
+
+    while(j < vetorB.length){
+        vetorC.push[j]
+        j++
+    }
+
+
+    return vetorC
+}
+
+
+
